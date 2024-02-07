@@ -28,7 +28,7 @@ ban_conn_time_over = 330  # Maximum oldest connection time in seconds
 states_file_timeout = 30 # The required freshness in seconds of the connection states file
 sleep_between_checks = 3  # Time in seconds between connection monitoring
 update_interval = 300  # Time in seconds check for updates (300 sec = 5 min)
-auto_update_enabled = True
+auto_update_enabled = False
 upgrade_btt = True # Set to true to upgrade machines to the latest Bittensor
 discord_mention_code = '<@&467918511092662272>' # You can get this by putting a \ in front of a mention and sending a message in discord GUI client
 
