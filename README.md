@@ -20,7 +20,7 @@ cd ~
 git clone https://github.com/BrennanCode1/btt-miner-shield.git
 cd btt-miner-shield
 pm2 start monitor_abuse.py --name btt-miner-shield-protection --interpreter python3
-pm2 logs btt-miner-shield-protection
+pm2 logs
 ```
 
 ## Configuration:
