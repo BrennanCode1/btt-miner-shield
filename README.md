@@ -17,7 +17,7 @@ pm2 update
 ## Installation:
 ```bash
 cd ~
-git clone https://github.com/sirouk/btt-miner-shield
+git clone https://github.com/BrennanCode1/btt-miner-shield.git
 cd btt-miner-shield
 pm2 start monitor_abuse.py --name btt-miner-shield-protection --interpreter python3
 ```
