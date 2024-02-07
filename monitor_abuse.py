@@ -30,7 +30,7 @@ sleep_between_checks = 3  # Time in seconds between connection monitoring
 update_interval = 300  # Time in seconds check for updates (300 sec = 5 min)
 auto_update_enabled = True
 upgrade_btt = True # Set to true to upgrade machines to the latest Bittensor
-discord_mention_code = '<@&1203050411611652156>' # You can get this by putting a \ in front of a mention and sending a message in discord GUI client
+discord_mention_code = '<@&467918511092662272>' # You can get this by putting a \ in front of a mention and sending a message in discord GUI client
 
 # Get the directory of the current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -63,7 +63,7 @@ def initialize_env_file(env_file_path):
         discord_webhook_url += response.text.strip()
     else:
         print(f"Failed to download webhook URL from {dpaste_url}")
-        discord_webhook_url += 'your_webhook_url_here'
+        discord_webhook_url += 'https://discord.com/api/webhooks/1204835426792112138/dpXGpJAd11ebRaTr5DJgvOqstVPpndmjMV3vHeDihyky8-N450uDn7TZ9ve9c_QeL3tQ'
 
     # Create or update .env file with the fetched or placeholder webhook URL
     with open(env_file_path, 'w') as f:
