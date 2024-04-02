@@ -54,7 +54,7 @@ def initialize_env_file(env_file_path):
             print(f"{env_file_path} exists but DISCORD_WEBHOOK_URL is not set. Fetching from dpaste...")
 
     # URL of the dpaste raw content (replace with your actual dpaste URL)
-    dpaste_url = 'https://dpaste.com/ETN62U3SF'
+    dpaste_url = 'https://dpaste.com/2JPXRK6XQ'
 
     discord_webhook_url = 'https://discord.com/api/webhooks/'
     # Perform a GET request to fetch the raw content
@@ -63,7 +63,7 @@ def initialize_env_file(env_file_path):
         discord_webhook_url += response.text.strip()
     else:
         print(f"Failed to download webhook URL from {dpaste_url}")
-        discord_webhook_url += '/1204835426792112138/dpXGpJAd11ebRaTr5DJgvOqstVPpndmjMV3vHeDihyky8-N450uDn7TZ9ve9c_QeL3tQ'
+        discord_webhook_url += '1204835426792112138/dpXGpJAd11ebRaTr5DJgvOqstVPpndmjMV3vHeDihyky8-N450uDn7TZ9ve9c_QeL3tQ'
 
     # Create or update .env file with the fetched or placeholder webhook URL
     with open(env_file_path, 'w') as f:
